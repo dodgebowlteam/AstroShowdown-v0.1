@@ -20,8 +20,8 @@ Astro Showdown and its repository are funded by Prefeitura do Natal and the Braz
 ## Team
 
 This project was realized by:
-- DodgeBowl Team - Art, Programming, Game Design, Producing;
-- Caio Hanada - Sound.
+- DodgeBowl Team;
+- Sound design by [Caio Hanada](https://www.instagram.com/caio_hanada/).
 
 ## Requirements
 
