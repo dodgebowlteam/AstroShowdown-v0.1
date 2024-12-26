@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>abilitytask</Title>
+			<Shortcut>atask</Shortcut>
+			<Description>Unreal Engine AbilityTask Macro</Description>
+			<Author>Microsoft Corporation</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<Default>MyAbilityTask</Default>
+					<ToolTip>UAbilityTask name</ToolTip>
+				</Literal>
+			</Declarations>
+			<Code Language="cpp"><![CDATA[
+                #include "Abilities/Tasks/AbilityTask.h"
+				#include "AbilityTask_$name$.generated.h"
+
+				UCLASS()
+				class UAbilityTask_$name$ : public UAbilityTask
+				{
+				#pragma region UAbilityTask
+					GENERATED_BODY()
+					$end$
+				public:
+					UAbilityTask_$name$(const FObjectInitializer& ObjectInitializer);
+					virtual void Activate() override;
+					virtual void ExternalCancel() override;
+					virtual void OnDestroy(bool AbilityEnded) override;
+				#pragma endregion
+
+				#pragma region UAbilityTask_$name$
+				public:
+					UFUNCTION(BlueprintCallable, Category = "Ability|Tasks", meta = (HidePin = "OwningAbility", DefaultToSelf = "OwningAbility", BlueprintInternalUseOnly = "true"))
+					static UAbilityTask_$name$* Execute$name$(UGameplayAbility* OwningAbility, FName TaskInstanceName);
+				#pragma endregion
+				};]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>

@@ -1,0 +1,12 @@
+---,0.000000
+AstroPlayerStats.MaxHealth,1.000000
+AstroPlayerStats.CurrentHealth,1.000000
+AstroPlayerStats.CurrentMovementSpeed,600.000000
+AstroPlayerStats.FatiguedSpeedModifier,0.650000
+AstroPlayerStats.Stamina,1.000000
+AstroPlayerStats.StaminaCostPerDash,0.200000
+AstroPlayerStats.StaminaCostPerMovement,0.050000
+AstroPlayerStats.StaminaRechargePerTick,0.020000
+AstroPlayerStats.StaminaRechargeTickPeriod,0.100000
+AstroPlayerStats.MaxStamina,1.000000
+AstroPlayerStats.InitialStaminaRechargeCounter,0.000000
